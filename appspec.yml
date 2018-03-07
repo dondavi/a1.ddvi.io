@@ -3,7 +3,8 @@ os: linux
 files:
   - source: /
     destination: /var/www/a1.ddvi.io
-    except: /deploy-scripts
+    except: /deploy-scripts/
+    except: /.idea/
 hooks:
   BeforeInstall:
     - location: deploy-scripts/install_dependencies.sh
