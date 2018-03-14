@@ -7,8 +7,8 @@ permissions:
   - object: /
     pattern: "*.js"
     except: [webconfig.js]
-  - object: /
-    pattern: "*deploy-scripts*"
+  - object: /deploy-scripts
+    pattern: "**"
     except: [stop_server.sh]
 hooks:
   BeforeInstall:
