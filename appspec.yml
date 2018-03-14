@@ -7,7 +7,7 @@ permissions:
   - object: /
     pattern: "*.js"
     except: [webconfig.js]
-  - object: /deploy-scripts
+  - object: /var/www/a1.ddvi.io/deploy-scripts
     pattern: "**"
     except: [stop_server.sh]
 hooks:
