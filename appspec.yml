@@ -3,8 +3,13 @@ os: linux
 files:
   - source: /
     destination: /var/www/a1.ddvi.io
-    except: /deploy-scripts/
-    except: /.idea/
+permissions:
+  - object: /
+    pattern: "*.js"
+    except: [webconfig.js]
+  - object: /
+    pattern: "*deploy-scripts*"
+    except: [stop_server.sh]
 hooks:
   BeforeInstall:
     - location: deploy-scripts/install_dependencies.sh
