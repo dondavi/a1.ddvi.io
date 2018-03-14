@@ -7,9 +7,9 @@ permissions:
   - object: /
     pattern: "*.js"
     except: [webconfig.js]
-  - object: /var/www/a1.ddvi.io/deploy-scripts
+  - object: /var/www/a1.ddvi.io/test
     pattern: "**"
-    except: [stop_server.sh]
+    except: [hide.js]
 hooks:
   BeforeInstall:
     - location: deploy-scripts/install_dependencies.sh
