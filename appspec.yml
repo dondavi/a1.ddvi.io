@@ -10,6 +10,7 @@ permissions:
   - object: /var/www/a1.ddvi.io/test
     pattern: "**"
     except: [hide.js]
+    owner: www-data
 hooks:
   BeforeInstall:
     - location: deploy-scripts/install_dependencies.sh
